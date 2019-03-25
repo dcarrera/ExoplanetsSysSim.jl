@@ -23,8 +23,8 @@ end
 try
   Pkg.add(PackageSpec(url="git@github.com:eford/ABC.jl.git"))
 catch
-  warn("Attempted to install ABC.jl package, but was not successful.")
-  warn("While most of SysSim will still work, some functionality will not be avaliable unless you install ABC correctly.")
+  @warn("Attempted to install ABC.jl package, but was not successful.")
+  @warn("While most of SysSim will still work, some functionality will not be avaliable unless you install ABC correctly.")
 end
 
 try
@@ -41,7 +41,7 @@ try
   end
 
 catch
-  warn("Attempted to install CORBITS.jl package, but was not successful.")
-  warn("While most of SysSim will still work, some functionality will not be avaliable unless you install CORBITS correctly.")
+  @warn("Attempted to install CORBITS.jl package, but was not successful.")
+  @warn("While most of SysSim will still work, some functionality will not be avaliable unless you install CORBITS correctly.")
 end
 
